@@ -1,6 +1,11 @@
 ﻿  Source.cpp
-d:\visual studio 2017\projects\cpprevision2018\cpprevision2018\source.cpp(27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-d:\visual studio 2017\projects\cpprevision2018\cpprevision2018\source.cpp(92): warning C4018: '<': signed/unsigned mismatch
-d:\visual studio 2017\projects\cpprevision2018\cpprevision2018\source.cpp(96): warning C4018: '<': signed/unsigned mismatch
-d:\visual studio 2017\projects\cpprevision2018\cpprevision2018\source.cpp(118): warning C4018: '<': signed/unsigned mismatch
-  CppRevision2018.vcxproj -> D:\Visual Studio 2017\Projects\CppRevision2018\Debug\CppRevision2018.exe
+d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\source.cpp(29): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\source.cpp(97): warning C4018: '<': signed/unsigned mismatch
+d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\source.cpp(101): warning C4018: '<': signed/unsigned mismatch
+d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\source.cpp(123): warning C4018: '<': signed/unsigned mismatch
+  MergeSorter.cpp
+  Generating Code...
+Source.obj : error LNK2019: unresolved external symbol "protected: __thiscall ArraySorter<int>::ArraySorter<int>(class std::vector<int,class std::allocator<int> >)" (??0?$ArraySorter@H@@IAE@V?$vector@HV?$allocator@H@std@@@std@@@Z) referenced in function "public: __thiscall MergeSorter<int>::MergeSorter<int>(class std::vector<int,class std::allocator<int> >)" (??0?$MergeSorter@H@@QAE@V?$vector@HV?$allocator@H@std@@@std@@@Z)
+Source.obj : error LNK2019: unresolved external symbol "protected: __thiscall ArraySorter<int>::~ArraySorter<int>(void)" (??1?$ArraySorter@H@@IAE@XZ) referenced in function "public: virtual __thiscall MergeSorter<int>::~MergeSorter<int>(void)" (??1?$MergeSorter@H@@UAE@XZ)
+Source.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall ArraySorter<int>::print(void)" (?print@?$ArraySorter@H@@UAEXXZ)
+D:\Github\University-Works\Algorithms\CppRevision2018\Debug\CppRevision2018.exe : fatal error LNK1120: 3 unresolved externals

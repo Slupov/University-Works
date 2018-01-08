@@ -2,6 +2,7 @@
 #include <vector>
 #include <ctime>
 #include <iomanip>
+#include "MergeSorter.h"
 
 #define LOWER_N 10
 #define UPPER_N 20
@@ -34,17 +35,20 @@ int main()
 		v[i] = next_random(1, 100);
 	}
 
-	cout << "original" << endl;
-	print(v);
-	cout << "^^^^^^^^^^^^^^^^" << endl;
+//	cout << "original" << endl;
+//	print(v);
+//	cout << "^^^^^^^^^^^^^^^^" << endl;
+//
+//	bubble_sort(v);
+//	cout << "----------------" << endl;
+//	selection_sort(v);
+//	cout << "----------------" << endl;
+//	insertion_sort(v);
+//	cout << "----------------" << endl;
+//	merge_sort(v);
 
-	bubble_sort(v);
-	cout << "----------------" << endl;
-	selection_sort(v);
-	cout << "----------------" << endl;
-	insertion_sort(v);
-	cout << "----------------" << endl;
-	merge_sort(v);
+	MergeSorter<int>* sorter = new MergeSorter<int>(v);
+//	sorter->print();
 
 	return 0;
 }
