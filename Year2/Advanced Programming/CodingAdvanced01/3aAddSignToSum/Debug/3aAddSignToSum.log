@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (3aPermutations.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Source.cpp
+d:\github\softuni-homeworks\nbu\year2\advanced programming\codingadvanced01\3aaddsigntosum\source.cpp(43): warning C4018: '>=': signed/unsigned mismatch
+d:\github\softuni-homeworks\nbu\year2\advanced programming\codingadvanced01\3aaddsigntosum\source.cpp(60): warning C4018: '<': signed/unsigned mismatch
+d:\github\softuni-homeworks\nbu\year2\advanced programming\codingadvanced01\3aaddsigntosum\source.cpp(65): warning C4018: '<': signed/unsigned mismatch
+  3aAddSignToSum.vcxproj -> D:\Github\Softuni-Homeworks\NBU\Year2\Advanced Programming\CodingAdvanced01\Debug\3aVariations.exe

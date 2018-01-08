@@ -1,0 +1,195 @@
+//stoyan lupov - f82264
+#include <iostream>
+#include <algorithm>
+#include <fstream>
+using namespace std;
+
+class CException
+{
+public:
+	CException()
+	{
+		m_err = "Some error";
+	}
+
+	CException(string err)
+	{
+		m_err = err;
+	}
+
+	string getErr() { return m_err; };
+private:
+	string m_err;
+};
+
+class CExceptionStackOverflow : public CException
+{
+public:
+	CExceptionStackOverflow() : CException("Stack overflow exception")
+	{
+	};
+};
+
+class CExceptionEmptyStack : public CException
+{
+public:
+	CExceptionEmptyStack() : CException("Stack empty exception")
+	{
+	};
+};
+
+#define MSTACK_MAX_CAP 12
+
+class CStack
+{
+public:
+	CStack()
+	{
+	};
+	virtual ~CStack(){};
+
+	virtual void push(int* element) throw (CExceptionStackOverflow) = 0;
+	virtual int* pop() throw (CExceptionEmptyStack) = 0;
+	virtual void trace() const = 0;
+
+	virtual int write_file_from_stack(char* file_name) = 0;
+	virtual int read_from_file_to_stack(char* file_name) = 0;
+};
+
+class MStack : public CStack
+{
+public:
+	MStack(): m_nCap(0), m_top(0), m_bottom(0)
+	{
+		m_pElements = new int*[m_nCap];
+	}
+
+	MStack(int cap) : m_top(0), m_bottom(0)
+	{
+		if (cap <= 0)
+		{
+			cap = 0;
+		}
+
+		m_nCap = min(MSTACK_MAX_CAP, cap);
+		m_pElements = new int*[m_nCap];
+	}
+
+	~MStack();
+	void push(int* element) throw(CExceptionStackOverflow) override;
+	int* pop() throw(CExceptionEmptyStack) override;
+	void trace() const override;
+
+	int write_file_from_stack(char* file_name) override;
+	int read_from_file_to_stack(char* file_name) override;
+
+private:
+	int m_nCap; //shows the current size of the stack
+	int** m_pElements; //[bottom]...[k]....[top]
+	int m_top; //index of top
+	int m_bottom; //index of bottom
+};
+
+MStack::~MStack()
+{
+	delete[] m_pElements; //to fix: possible delete on already freed up space (after pop)
+}
+
+void MStack::push(int* element) throw(CExceptionStackOverflow)
+{
+	if (m_top >= MSTACK_MAX_CAP - 1)
+	{
+		throw CExceptionStackOverflow();
+	}
+
+	m_top++;
+	m_pElements[m_top] = element;
+	m_nCap++;
+}
+
+int* MStack::pop() throw(CExceptionEmptyStack)
+{
+	if (m_nCap == 0)
+	{
+		throw CExceptionEmptyStack();
+	}
+
+	int* toReturn = m_pElements[m_top];
+	int* value = new int(*toReturn); // because it should return an int*
+
+	delete m_pElements[m_top]; //free up the space in the array
+
+	m_top--;
+	m_nCap--;
+
+	return value;
+}
+
+void MStack::trace() const
+{
+	cout << "Stack trace:" << endl;
+
+	for (int i = m_top; i > m_bottom; i--)
+	{
+		cout << *m_pElements[i] << endl;
+	}
+}
+
+int MStack::write_file_from_stack(char* file_name)
+{
+	ofstream out_file;
+	out_file.open(file_name);
+
+	if (out_file.fail())
+	{
+		return -1;
+	}
+
+	for (int i = m_top; i > m_bottom; i--) // could have overloaded the << operator for this
+	{
+		out_file << *m_pElements[i] << endl;
+	}
+
+	out_file.close();
+	return 0;
+}
+
+int MStack::read_from_file_to_stack(char* file_name)
+{
+	ifstream in_file;
+	in_file.open(file_name);
+
+	if (in_file.fail())
+	{
+		return -1;
+	}
+
+	int data;
+
+	while (!in_file.eof())
+	{
+		in_file >> data;
+		push(new int(data));
+	}
+
+	in_file.close();
+	return 0;
+}
+
+int main()
+{
+	MStack stack;
+	stack.push(new int(5));
+	stack.push(new int(6));
+	stack.push(new int(7));
+	stack.push(new int(8));
+
+	stack.trace();
+
+	int* el = stack.pop();
+
+	cout << *el << endl;
+
+	stack.trace();
+	return 0;
+}

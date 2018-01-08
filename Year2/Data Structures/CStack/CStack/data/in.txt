@@ -1,0 +1,4 @@
+1 1 ednoedno
+1 2 ednodwe
+2 2 dwe_dwe
+3 2 tri_dwe

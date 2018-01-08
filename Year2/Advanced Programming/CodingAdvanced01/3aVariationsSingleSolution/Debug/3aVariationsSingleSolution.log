@@ -1,0 +1,5 @@
+﻿  Source.cpp
+d:\github\softuni-homeworks\nbu\year2\advanced programming\codingadvanced01\3avariationssinglesolution\source.cpp(51): warning C4018: '>=': signed/unsigned mismatch
+d:\github\softuni-homeworks\nbu\year2\advanced programming\codingadvanced01\3avariationssinglesolution\source.cpp(82): warning C4018: '<': signed/unsigned mismatch
+d:\github\softuni-homeworks\nbu\year2\advanced programming\codingadvanced01\3avariationssinglesolution\source.cpp(92): warning C4018: '<': signed/unsigned mismatch
+  3aVariationsSingleSolution.vcxproj -> D:\Github\Softuni-Homeworks\NBU\Year2\Advanced Programming\CodingAdvanced01\Debug\3aVariationsSingleSolution.exe
