@@ -3,14 +3,14 @@
 #include <iostream>
 
 template <typename T>
-MergeSorter<T>::MergeSorter()
+MergeSorter<T>::MergeSorter() : ArraySorter<T>()
 {
 }
 
 template <typename T>
 MergeSorter<T>::MergeSorter(std::vector<T> v) : ArraySorter<T>(v)
 {
-
+	this->MergeSorter<T>::sort();
 }
 
 template <typename T>
@@ -26,9 +26,7 @@ int MergeSorter<T>::sort()
 	merge_sort_start(this->v);
 
 	clock_t endT = clock();
-
-	this->print();
-	std::cout << "merge sort time: " << double(endT - beginT) / CLOCKS_PER_SEC << endl;
+	this->seconds_elapsed = double(endT - beginT) / CLOCKS_PER_SEC;
 
 	return 0;
 }
@@ -105,3 +103,5 @@ int MergeSorter<T>::merge(std::vector<int>& left, std::vector<int>& right, std::
 
 	return 0;
 }
+
+template MergeSorter<int>;

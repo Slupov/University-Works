@@ -11,7 +11,9 @@ public:
 
 	virtual ~MergeSorter();
 
+protected:
 	int sort() override;
+
 private:
 	int merge_sort_start(std::vector<int>& v);
 	int merge(std::vector<int>& left, std::vector<int>& right, std::vector<int>& v);

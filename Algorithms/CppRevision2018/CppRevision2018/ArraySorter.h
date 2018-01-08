@@ -6,6 +6,7 @@ class ArraySorter
 {
 protected:
 	std::vector<T> v;
+	double seconds_elapsed;
 
 	ArraySorter();
 	ArraySorter(std::vector<T> v);
@@ -16,6 +17,7 @@ protected:
 
 public:
 	virtual void print();
+	virtual double sorting_time();
 };
 
-
+template ArraySorter<int>;

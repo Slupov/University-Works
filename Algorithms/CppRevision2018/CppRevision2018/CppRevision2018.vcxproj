@@ -116,12 +116,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArraySorter.cpp" />
+    <ClCompile Include="BubbleSorter.cpp" />
+    <ClCompile Include="HelperFunctions.cpp" />
+    <ClCompile Include="InsertionSorter.cpp" />
     <ClCompile Include="MergeSorter.cpp" />
+    <ClCompile Include="SelectionSorter.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArraySorter.h" />
+    <ClInclude Include="BubbleSorter.h" />
+    <ClInclude Include="InsertionSorter.h" />
     <ClInclude Include="MergeSorter.h" />
+    <ClInclude Include="SelectionSorter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

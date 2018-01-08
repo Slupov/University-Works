@@ -1,11 +1,18 @@
 ﻿  Source.cpp
-d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\source.cpp(29): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\source.cpp(97): warning C4018: '<': signed/unsigned mismatch
-d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\source.cpp(101): warning C4018: '<': signed/unsigned mismatch
-d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\source.cpp(123): warning C4018: '<': signed/unsigned mismatch
-  MergeSorter.cpp
-  Generating Code...
-Source.obj : error LNK2019: unresolved external symbol "protected: __thiscall ArraySorter<int>::ArraySorter<int>(class std::vector<int,class std::allocator<int> >)" (??0?$ArraySorter@H@@IAE@V?$vector@HV?$allocator@H@std@@@std@@@Z) referenced in function "public: __thiscall MergeSorter<int>::MergeSorter<int>(class std::vector<int,class std::allocator<int> >)" (??0?$MergeSorter@H@@QAE@V?$vector@HV?$allocator@H@std@@@std@@@Z)
-Source.obj : error LNK2019: unresolved external symbol "protected: __thiscall ArraySorter<int>::~ArraySorter<int>(void)" (??1?$ArraySorter@H@@IAE@XZ) referenced in function "public: virtual __thiscall MergeSorter<int>::~MergeSorter<int>(void)" (??1?$MergeSorter@H@@UAE@XZ)
-Source.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall ArraySorter<int>::print(void)" (?print@?$ArraySorter@H@@UAEXXZ)
-D:\Github\University-Works\Algorithms\CppRevision2018\Debug\CppRevision2018.exe : fatal error LNK1120: 3 unresolved externals
+d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\source.cpp(20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\arraysorter.h(23): warning C4661: 'ArraySorter<int>::ArraySorter(std::vector<T,std::allocator<_Ty>>)': no suitable definition provided for explicit template instantiation request
+          with
+          [
+              T=int,
+              _Ty=int
+          ]
+  d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\arraysorter.h(12): note: see declaration of 'ArraySorter<int>::ArraySorter'
+d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\arraysorter.h(23): warning C4661: 'ArraySorter<int>::ArraySorter(void)': no suitable definition provided for explicit template instantiation request
+  d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\arraysorter.h(11): note: see declaration of 'ArraySorter<int>::ArraySorter'
+d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\arraysorter.h(23): warning C4661: 'ArraySorter<int>::~ArraySorter(void)': no suitable definition provided for explicit template instantiation request
+  d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\arraysorter.h(14): note: see declaration of 'ArraySorter<int>::~ArraySorter'
+d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\arraysorter.h(23): warning C4661: 'void ArraySorter<int>::print(void)': no suitable definition provided for explicit template instantiation request
+  d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\arraysorter.h(19): note: see declaration of 'ArraySorter<int>::print'
+d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\arraysorter.h(23): warning C4661: 'double ArraySorter<int>::sorting_time(void)': no suitable definition provided for explicit template instantiation request
+  d:\github\university-works\algorithms\cpprevision2018\cpprevision2018\arraysorter.h(20): note: see declaration of 'ArraySorter<int>::sorting_time'
+  CppRevision2018.vcxproj -> D:\Github\University-Works\Algorithms\CppRevision2018\Debug\CppRevision2018.exe
