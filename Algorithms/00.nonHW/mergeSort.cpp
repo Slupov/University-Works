@@ -63,13 +63,13 @@ void print(vector<int> a) {
     cout << "\n";
 }
 
-
-int main() {
+int start_merge_sort() {
     vector<int> v(20);
 
     for (int i = 0; i < v.size(); i++) {
         cin >> v[i];
     }
+
     print(v);
     merge_sort(v, 0, v.size() - 1);
     print(v);

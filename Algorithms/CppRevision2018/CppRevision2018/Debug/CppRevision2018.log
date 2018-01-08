@@ -1,0 +1,6 @@
+﻿  Source.cpp
+d:\visual studio 2017\projects\cpprevision2018\cpprevision2018\source.cpp(27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\visual studio 2017\projects\cpprevision2018\cpprevision2018\source.cpp(92): warning C4018: '<': signed/unsigned mismatch
+d:\visual studio 2017\projects\cpprevision2018\cpprevision2018\source.cpp(96): warning C4018: '<': signed/unsigned mismatch
+d:\visual studio 2017\projects\cpprevision2018\cpprevision2018\source.cpp(118): warning C4018: '<': signed/unsigned mismatch
+  CppRevision2018.vcxproj -> D:\Visual Studio 2017\Projects\CppRevision2018\Debug\CppRevision2018.exe

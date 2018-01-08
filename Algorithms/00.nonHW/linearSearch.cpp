@@ -14,7 +14,7 @@ void print(vector<int> a)
    cout << "\n";
 }
 
-int main()
+int start_linear_search()
 {
    vector<int> v(20);
    for (int i = 0; i < v.size(); i++){
