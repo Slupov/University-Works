@@ -13,28 +13,34 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Sorters">
+      <UniqueIdentifier>{4fd4e16e-4ea8-41ea-8ad4-8f87613e95cd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ArraySorter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MergeSorter.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Sorters</Filter>
     </ClCompile>
     <ClCompile Include="BubbleSorter.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Sorters</Filter>
     </ClCompile>
     <ClCompile Include="HelperFunctions.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SelectionSorter.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Sorters</Filter>
     </ClCompile>
     <ClCompile Include="InsertionSorter.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Sorters</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeSorter.cpp">
+      <Filter>Source Files\Sorters</Filter>
+    </ClCompile>
+    <ClCompile Include="RadixSorter.cpp">
+      <Filter>Source Files\Sorters</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionSorter.cpp">
+      <Filter>Source Files\Sorters</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InsertionSorter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RadixSorter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

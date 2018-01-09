@@ -23,7 +23,7 @@ ArraySorter<T>::~ArraySorter()
 template <typename T>
 void ArraySorter<T>::print()
 {
-//	printVector(this->v);
+	printVector(this->v);
 }
 
 template <typename T>
