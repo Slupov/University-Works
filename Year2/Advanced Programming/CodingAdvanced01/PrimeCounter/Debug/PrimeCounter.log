@@ -1,3 +1,3 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (PrimeCounter.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Source.cpp
-  PrimeCounter.vcxproj -> D:\Github\Softuni-Homeworks\NBU\Year2\Advanced Programming\CodingAdvanced01\Debug\1bPrimeCounter.exe
+  PrimeCounter.vcxproj -> D:\Github\University-Works\Year2\Advanced Programming\CodingAdvanced01\Debug\1bPrimeCounter.exe

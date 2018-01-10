@@ -1,3 +1,3 @@
 ﻿  Source.cpp
-d:\github\softuni-homeworks\nbu\year2\advanced programming\codingadvanced01\2aprimecounter\source.cpp(27): warning C4018: '<': signed/unsigned mismatch
-  2aPrimeCounter.vcxproj -> D:\Github\Softuni-Homeworks\NBU\Year2\Advanced Programming\CodingAdvanced01\Debug\2aPrimeCounter.exe
+d:\github\university-works\year2\advanced programming\codingadvanced01\2aprimecounter\source.cpp(27): warning C4018: '<': signed/unsigned mismatch
+  2aPrimeCounter.vcxproj -> D:\Github\University-Works\Year2\Advanced Programming\CodingAdvanced01\Debug\2aPrimeCounter.exe

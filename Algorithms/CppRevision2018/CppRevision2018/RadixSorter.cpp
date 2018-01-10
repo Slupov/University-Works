@@ -52,33 +52,37 @@ int RadixSorter<T>::getMax()
 template <typename T>
 void RadixSorter<T>::countSort(int exp)
 {
+	this->v = std::vector<int>{ 3221, 1, 10, 9680, 577, 9420, 7, 5622, 4793, 2030, 3138, 82, 2599, 743, 4127 };
 	int n = this->v.size();
 	std::vector<int> output(n); // output array
-	int i, buckets[10] = {0};
+	int buckets[10] = {0};
 
-	// Store count of occurrences in count[]
-	for (i = 0; i < n; i++)
+	// Store count of occurrences in buckets[]
+	for (int i = 0; i < n; i++)
 	{
 		int pos = (this->v[i] / exp) % 10;
 		++buckets[pos];
 	}
 
-	// Change count[i] so that count[i] now contains actual
-	//  position of this digit in output[]
-	for (i = 1; i < 10; i++)
-		buckets[i] += buckets[i - 1]; //TODO: understand why this works
+	// Change buckets[i] so that buckets[i] now contains actual
+	//  position (in output[]) of the numbers that were in this digit-indexed bucket
+	for (int i = 1; i < 10; i++)
+		buckets[i] += buckets[i - 1]; 
 
 	// Build the output array
-	for (i = n - 1; i >= 0; i--)
+	for (int i = n - 1; i >= 0; i--)
 	{
+		//get current exponent's digit from the number
 		int digit = (this->v[i] / exp) % 10;
-		output[buckets[digit] - 1] = this->v[i];
+
+		const int outputPos = buckets[digit] - 1;
+		output[outputPos] = this->v[i];
 		--buckets[digit];
 	}
 
 	// Copy the output array to original vector, so that original vector now
 	// contains sorted numbers according to current digit
-	for (i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)
 		this->v[i] = output[i];
 }
 
