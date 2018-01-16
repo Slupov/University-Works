@@ -73,8 +73,7 @@ void BFS(int i, map<int, set<int>>& nodesWithNeighbours)
 		i = queue.front();
 		visited.insert(queue.front());
 		queue.pop();
-	}
-	while (queue.size() > 0);
+	} while (queue.size() > 0);
 
 	print(visited);
 }

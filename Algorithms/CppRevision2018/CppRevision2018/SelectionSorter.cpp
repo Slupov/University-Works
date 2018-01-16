@@ -31,6 +31,7 @@ int SelectionSorter<T>::sort()
 	{
 		int minPos = i;
 
+		//find position of smallest int
 		for (int j = i + 1; j < this->v.size(); ++j)
 		{
 			if (this->v[minPos] > this->v[j])
