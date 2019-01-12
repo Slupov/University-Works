@@ -5,6 +5,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+<!-- Following links are related to slider implementation which is NOT FINISHED -->
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<!-- <link rel="stylesheet" href="../layout/styles/gallery.css"> -->
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
@@ -96,6 +100,16 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+<!-- Following elements are related to slider implementation which is NOT FINISHED -->
+<!-- <div id="image-slider">
+  <img id="image-slider-image">
+  <-!-- Navigation buttons -!->
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+  <button class="w3-button w3-display-center" onclick="closeSlider()">Close</button>
+</div> -->
+
 <div class="wrapper row3">
   <main class="hoc container clear"> 
     <!-- main body -->
@@ -106,18 +120,18 @@
         <figure>
           <header class="heading">Галерия</header>
           <ul class="nospace clear">
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/02.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/03.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/03.jpg" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/04.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/05.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/06.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/07.jpg" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/08.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/09.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/10.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/11.jpg" alt=""></a></li>
+            <li class="one_quarter first"><a href="#"><img class="slider-element" src="../images/demo/gallery/01.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img class="slider-element" src="../images/demo/gallery/02.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img class="slider-element" src="../images/demo/gallery/03.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img class="slider-element" src="../images/demo/gallery/03.jpg" alt=""></a></li>
+            <li class="one_quarter first"><a href="#"><img class="slider-element" src="../images/demo/gallery/04.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img class="slider-element" src="../images/demo/gallery/05.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img class="slider-element" src="../images/demo/gallery/06.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img class="slider-element" src="../images/demo/gallery/07.jpg" alt=""></a></li>
+            <li class="one_quarter first"><a href="#"><img class="slider-element" src="../images/demo/gallery/08.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img class="slider-element" src="../images/demo/gallery/09.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img class="slider-element" src="../images/demo/gallery/10.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img class="slider-element" src="../images/demo/gallery/11.jpg" alt=""></a></li>
           </ul>
           <figcaption>Галерия от местата които вече посетихме</figcaption>
         </figure>
@@ -173,7 +187,7 @@
           <div class="infobox"><i class="fa fa-envelope-o"></i>
             <ul class="nospace">
               <li><a href="#"> info@matinlo-adventures.com</a></li>
-              <li><a href="#">sales@matinlo-adventures.com</a></li>
+              <li><a href="#">stoyan.lupov@gmail.com</a></li>
             </ul>
           </div>
         </li>
@@ -232,5 +246,7 @@
 <script src="../layout/scripts/jquery.min.js"></script>
 <script src="../layout/scripts/jquery.backtotop.js"></script>
 <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<!-- Followings script are related to slider implementation which is not FINISHED -->
+<!-- <script src="../layout/scripts/gallery.js"></script> -->
 </body>
 </html>
